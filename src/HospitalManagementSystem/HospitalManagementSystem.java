@@ -108,7 +108,7 @@ public class HospitalManagementSystem {
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()){
                 int count = resultSet.getInt(1);
-                if(count==0){
+                if(count<10){
                     return true;
                 }else{
                     return false;
